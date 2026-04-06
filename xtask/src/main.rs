@@ -414,7 +414,7 @@ fn cmd_serve() {
     // Handle Ctrl+C gracefully so cargo doesn't report an error
     ctrlc_exit();
 
-    println!("\nServing at http://{addr}  (Ctrl+C to stop)");
+    println!("\nServing at http://localhost:3000  (Ctrl+C to stop)");
 
     for stream in listener.incoming() {
         let Ok(mut stream) = stream else { continue };
